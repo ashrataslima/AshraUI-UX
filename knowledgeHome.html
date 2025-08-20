@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeStyle.css">
+    <title>Ashra Taslima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        body {
+            background-color: white;
+        }
+        .content1 {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .gridContainer{
+            display: grid;
+            column-gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            padding: 50px;
+        }
+        .gridContentDiv{
+            padding: 30px;
+        }
+        .gridContentDivColor{
+            padding: 30px;
+            background-color: rgba(227,213,231, 0.4);
+        }
+        h4{
+            color: #4C2F63;
+        }
+        .subTitle{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bolder;
+        }
+        .single{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .gridContentDiv img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; /* Ensures images don't exceed container width */
+            height: auto; /* Maintains aspect ratio */
+        }
+    </style>
+    
+</head>
+
+<body style="overflow: scroll;">
+
+    <!-- <header> -->
+            <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="Logo.svg" alt="Ashra Taslima"width="80%" height="auto"></a>
+            <!-- Hamburger Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+                            <li><a class="dropdown-item" href="coursology.html">Coursology</a></li>
+                            <li><a class="dropdown-item" href="expressPay.html">Express Pay</a></li>
+                            <li><a class="dropdown-item" href="knowledgeHome.html">Knowledge Home</a></li>
+                            <li><a class="dropdown-item" href="degreeSearch.html">Degree Search</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="UI-UX Designer.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content1">
+        <h1 style="align-items: center">Knowledge Home</h1>
+        <h5><strong>A modern web application for the company's knowledge base</strong></h5>
+    </div>
+
+    <div class="gridContainer">
+        <div class="gridContentDiv">
+            <h4>My Contribution</h4>
+            <p>
+                <div class="subTitle">Role</div>
+                
+                    I was the Lead Designer in this project. I came up with the design system and acted as a full stack designer from start to finish. Transitioning from legacy methodologies to a more modern approach.                
+                <div class="subTitle">Project Type</div>
+                Web Application
+                <div class="subTitle">Project Duration</div>
+                August 2022 to June 2023
+                <div class="subTitle">Design Tool</div>
+                Figma, Adobe Photoshop, Indesign  
+            </p>
+        </div>
+        <div class="gridContentDivColor">
+            <h4 style="padding-bottom: 10px;">Credit One Bank</h4>
+            Credit One Bank, N.A. is an American bank and financial services company specializing in credit cards, particularly for borrowers with low credit scores. It is a wholly-owned subsidiary of Credit One Financial, incorporated in Nevada.
+        </div>
+    </div>
+    <div class="gridContentDivColor single">
+        <h4 style="padding-bottom: 10px;">Overview</h4>
+        <p>
+            Knowledge Home started as part of Universal CRM. While designing other applications and from conversations with our agents during that time I realized that the current way of accessing information left a lot to be desired. At that point of time you had to log in to a system and type out what word document you were looking for and read through the whole thing to find a small snippet of information. The layout of the information was not organized. As our system and company was growing I realized this would be a massive bottleneck for us.
+        </p>
+        <p>
+            With this in mind, I led the call to redesign the existing knowledge base and make it more accessible, easy to navigate and clear/concise.
+        </p>
+    </div>
+    <div class="gridContentDiv single">
+        <h4>Research:</h4>
+        <p>
+            Even though I had a general idea of what the initial pain points were for the agents, I felt the need to get more in depth into this problem.            
+            <ul>
+                <li>Job shadowing: Observed the call center agents as they performed their work.</li>
+                <li>Workshops: Conducted workshops with call center agents to gather their input and feedback on the types of information and resources that would be most helpful for them to have access to. </li>
+                <li>Usability testing: Tested the usability of the web-app knowledge home with call center agents.</li>
+                <li>Customer feedback: Gathered feedback from customers who have interacted with call center agents This helped identify areas where call center agents may need additional training or support.</li>
+                <li>Data analysis: Collected and analyzed call center data, such as call logs and customer feedback, to identify trends and patterns in the types of questions and issues that rose  most frequently, and the types of information that call center agents needed to have readily available to assist customers more effectively.</li>
+
+            </ul>
+        </p>
+    </div>
+    <div class="gridContentDiv single">
+        <h4>Insights and Analysis:</h4>
+        <p>
+            <ul>
+                <li>Difficulty finding information: This leads to longer call times, lower customer satisfaction, and higher agent frustration.</li>
+                <li>Outdated information: With an old knowledge base system, there is a risk that some of the information may be outdated or inaccurate. There might be multiple versions of the same process.</li>
+                <li>Limited functionality: The lack of functionality may make it more difficult to maintain and update the knowledge base, which can contribute to the problem of outdated information.</li>
+                <li>Lack of training and support: With an outdated system, it becomes very hard and expensive to train new staff. This can lead to inconsistencies in the information provided to customers, as well as frustration and low morale among agents.</li>
+                <li>Inefficient workflow: The old knowledge base system does not integrate well with other tools, which makes it difficult provide seamless service to customers. Additionally, the time required to search for information within the knowledge base adds unnecessary time to call handling, which can lead to lower efficiency and productivity.</li>
+            </ul>
+        </p>
+    </div>
+    
+    <div class="gridContentDiv single" style="background-color: #F7F7F7;">
+        <h4>Designing Process:</h4>
+        <p>
+            A basic stripped down architecture of the app
+            <img src="KH1.svg" alt="KM Site Map">
+            <br>
+            <img src="KH2.svg" alt="KM Flow Chart">
+            <br>
+            <h6>Key Features Added:</h6>
+            <ul>
+                <li>Search Filtering and Sorting Options</li>
+                <li>Each artifact has specific tags which can be used in conjunction with the search/sort feature thus getting more specific results back.</li>
+            
+                <img src="KH3.svg">
+                <img src="KH4.svg">
+                
+                <li>Contribution Page (CS Call Agents, Writer, Admin)</li>
+
+                <img src="KH5.svg">
+
+                <li>Feedback System</li>
+
+                <img src="KH6.svg">
+
+                <li>Content History Page</li>
+                
+                <img src="KH7.svg">
+            </ul>
+            
+            
+        </p>
+    </div>
+    <div class="gridContentDiv single">
+        <h4>Final Result</h4>
+        <p>
+            This is an ongoing project that is in production.<br>
+            If you want to learn more about the project, let's set up a time and talk. 
+        </p>
+    </div>
+    <div class="gridContentDiv single" style="background-color: #363062; color: white;">
+        <h4 style="color: white;">Thank You!</h4>
+        <p>
+            Thank you for reviewing my work. If you have any questions or want to just connect - feel free to reach out to me via email.
+        </p>
+    </div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('#navbarNav');
+
+            // Debug hamburger menu toggle
+            if (navbarToggler && navbarCollapse) {
+                navbarToggler.addEventListener('click', () => {
+                    console.log('Hamburger menu clicked. Collapse state:', navbarCollapse.classList.contains('show') ? 'Will hide' : 'Will show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

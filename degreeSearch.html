@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeStyle.css">
+    <title>Ashra Taslima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        body {
+            background-color: white;
+        }
+        .content1 {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .gridContainer{
+            display: grid;
+            column-gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            padding: 50px;
+        }
+        .gridContentDiv{
+            padding: 30px;
+        }
+        .gridContentDivColor{
+            padding: 30px;
+            background-color: rgba(227,213,231, 0.4);
+        }
+        h4{
+            color: #4C2F63;
+        }
+        .subTitle{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bolder;
+        }
+        .single{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .gridContentDiv img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; /* Ensures images don't exceed container width */
+            height: auto; /* Maintains aspect ratio */
+        }
+    </style>
+    
+</head>
+
+<body style="overflow: scroll;">
+
+    <!-- <header> -->
+            <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="Logo.svg" alt="Ashra Taslima"width="80%" height="auto"></a>
+            <!-- Hamburger Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+                            <li><a class="dropdown-item" href="coursology.html">Coursology</a></li>
+                            <li><a class="dropdown-item" href="expressPay.html">Express Pay</a></li>
+                            <li><a class="dropdown-item" href="knowledgeHome.html">Knowledge Home</a></li>
+                            <li><a class="dropdown-item" href="degreeSearch.html">Degree Search</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="UI-UX Designer.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content1">
+        <h1 style="align-items: center">Degree Search</h1>
+        <h5><strong>Degree Search interface for graduate students</strong></h5>
+    </div>
+
+    <div class="gridContainer">
+        <div class="gridContentDiv">
+            <h4>My Contribution</h4>
+            <p>
+                <div class="subTitle">Role</div>
+                
+                    I was the Lead Designer in this project.  My job was to insure that the application had consistence across both undergraduate and graduate degrees.                
+                <div class="subTitle">Project Type</div>
+                Web Application
+                <div class="subTitle">Project Duration</div>
+                June 2023 to March 2024
+                <div class="subTitle">Design Tool</div>
+                Figma, Adobe Photoshop, Indesign, University Design System 
+            </p>
+        </div>
+        <div class="gridContentDivColor">
+            <h4 style="padding-bottom: 10px;">University of Arizona</h4>
+            University of Arizona is a state university located in Tucson Arizona.
+        </div>
+    </div>
+    <div class="gridContentDivColor single">
+        <h4 style="padding-bottom: 10px;">Overview</h4>
+        <p>
+            The Graduate Degree Search interface is designed to help users explore and filter graduate programs (e.g., Master’s, PhD) based on criteria such as discipline, location, institution, and program details. The goal is to provide an intuitive, efficient, and visually appealing platform that simplifies the complex process of researching higher education opportunities. This analysis evaluates the interface’s usability, aesthetics, functionality, and user experience, reflecting on the design process and outcomes.        </p>
+    </div>
+
+    <div class="gridContentDiv single">
+        <h4>Design Objectives:</h4>
+        <p>
+            <ul>
+                <li>
+                    <strong>User-Centric Navigation:</strong> 
+                    Enable users to quickly find relevant programs with minimal friction.
+                </li>
+                <li>
+                    <strong>Comprehensive Filtering:</strong>
+                    Offer robust filters to narrow down search results based on user preferences.
+                </li>
+                <li>
+                    <strong>Responsive Design:</strong>
+                    Ensure accessibility and usability across devices (desktop, tablet, and mobile).                </li>
+                <li>
+                    <strong>Clear Information Architecture:</strong>
+                    Present program details in a structured, digestible format.
+                </li>
+                <li>
+                    <strong>Engaging Aesthetics:</strong>
+                     Use modern design principles that not only create a visually cohesive and professional interface, but also keep in mind the branding of the university.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="gridContentDiv single">
+        <h4>UI/UX Analysis:</h4>
+        <p>
+            <ul>
+                <li>
+                    <strong>Usability</strong> <br>
+                    The interface prioritizes ease of use through intuitive navigation and clear calls-to-action (CTAs). Key usability features include:
+                    <ul>
+                        <li>
+                            <strong>Search Functionality:</strong>
+                            A prominent search bar allows users to input keywords (e.g., “Computer Science Master’s”), with autocomplete suggestions to enhance efficiency.
+                        </li>
+                        <li>
+                            <strong>Filter System:</strong>
+                            Filters for program type, location, tuition, and duration are logically organized, likely in a sidebar or dropdown menu, enabling users to refine results without overwhelming complexity.
+                        </li>
+                        <li>
+                            <strong>Results Layout:</strong>
+                             Programs are displayed in a clean list or grid format, with key details (e.g., university name, degree type, duration) visible upfront, reducing cognitive load.
+                        </li>
+                        <li>
+                            <strong>Accessibility:</strong>
+                            Assuming adherence to WCAG guidelines, the design likely incorporates sufficient color contrast, keyboard navigation, and screen-reader compatibility to ensure inclusivity.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Strengths:</strong>
+                            <ul>
+                                <li>Streamlined search process reduces time to find relevant programs.</li>
+                                <li>Logical filter hierarchy supports both novice and experienced users.</li>
+                                <li>Clear CTAs (e.g., “View Program” or “Apply Now”) guide user actions.</li>
+                            </ul>
+                        
+                        </li>
+                        
+                        <br>
+                        <li>
+                            <strong>Areas for Improvement:</strong>
+                            <ul>
+                                <li>If filters are too numerous, consider progressive disclosure to avoid overwhelming users.</li>
+                                <li>Ensure mobile users can easily access and manage filters without excessive scrolling.</li>
+                                <li>Conduct usability testing to identify any friction points in the search-to-results flow.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <strong>Aesthetics</strong>
+                    <br>
+                    The visual design likely adheres to modern UI trends, balancing functionality with an engaging aesthetic:
+                    <ul>
+                        <li>
+                            <strong>Typography:</strong>
+                            typography: Clean, readable fonts (e.g., sans-serif like Roboto or Inter) ensure legibility across program descriptions and headings.
+                        </li>
+                        <li>
+                            <strong>Color Scheme:</strong>
+                            A professional palette (e.g., neutral tones with accent colors like blue or green) conveys trust and clarity, aligning with educational platforms.
+                        </li>
+                        <li>
+                            <strong>Whitespace:</strong>
+                            Ample spacing between elements prevents visual clutter, enhancing focus on key content like search results.
+                        </li>
+                        <li>
+                            <strong>Visual Hierarchy:</strong>
+                            Bold headings, consistent button styles, and highlighted CTAs guide user attention effectively.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Strengths:</strong>
+                            <ul>
+                                <li>Professional and approachable aesthetic aligns with the academic audience.</li>
+                                <li>Consistent design language reinforces brand reliability.</li>
+                                <li>Use of icons or visual cues (e.g., for filters or program types) enhances scannability.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Areas for Improvement:</strong>
+                            <ul>
+                                <li>Ensure color contrast meets accessibility standards (e.g., WCAG 2.1 AA).</li>
+                                <li>Avoid overly decorative elements that could distract from core functionality.</li>
+                                <li>Test visual consistency across devices to maintain a cohesive experience.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <strong>Functionality</strong>
+                    <br>
+                    The interface is designed to handle complex data while maintaining performance and reliability:
+                    <ul>
+                        <li>
+                            <strong>Search and Filter Logic:</strong>
+                            The system likely supports dynamic filtering, updating results in real-time as users adjust criteria, with smooth transitions to maintain context.
+                        </li>
+                        <li>
+                            <strong>Data Presentation:</strong>
+                            Program details are likely organized in cards or tables, with expandable sections for in-depth information (e.g., admission requirements, deadlines).
+                        </li>
+                        <li>
+                            <strong>Responsive Design:</strong>
+                            The layout adapts seamlessly across devices, with mobile-friendly touch targets and collapsible menus for smaller screens.
+                        </li>
+                        <li>
+                            <strong>Error Handling:</strong>
+                            Clear feedback for invalid inputs (e.g., “No results found”) guides users to refine their search.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Strengths:</strong>
+                            <ul>
+                                <li>Real-time filtering enhances interactivity and user control.</li>
+                                <li>Responsive design ensures accessibility for diverse user contexts.</li>
+                                <li>Structured data presentation supports quick decision-making.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Areas for Improvement:</strong>
+                            <ul>
+                                <li>Optimize backend performance for large datasets to prevent lag in results display.</li>
+                                <li>Include a “reset filters” option for users to easily start over.</li>
+                                <li>Test edge cases (e.g., no results or invalid queries) to ensure graceful handling.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <strong>User Experience</strong>
+                    <br>
+                    The overall experience aims to empower users to make informed decisions about graduate programs:
+                    <ul>
+                        <li>
+                            <strong>User Flow:</strong>
+                            The journey from landing page to search to detailed program view is streamlined, with minimal steps to access critical information.
+                        </li>
+                        <li>
+                            <strong>Feedback Mechanisms:</strong>
+                            Visual cues (e.g., loading spinners, highlighted filters) keep users informed of system status.
+                        </li>
+                        <li>
+                            <strong>Personalization:</strong>
+                            If implemented, features like saved searches or favorite programs enhance user engagement by tailoring the experience.
+                        </li>
+                        <li>
+                            <strong>Emotional Impact:</strong>
+                            The design likely conveys trust and clarity, reducing the stress of navigating complex academic options.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Strengths:</strong>
+                            <ul>
+                                <li>Intuitive flow aligns with user goals (finding and comparing programs).</li>
+                                <li>Feedback mechanisms maintain transparency during interactions.</li>
+                                <li>Clean design reduces decision fatigue for users exploring multiple options.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Areas for Improvement:</strong>
+                            <ul>
+                                <li>Consider adding onboarding tips or tooltips for first-time users unfamiliar with advanced filters.</li>
+                                <li>Incorporate user feedback loops (e.g., surveys) to refine the experience.</li>
+                                <li>Explore personalization features (e.g., recommended programs based on search history) to increase engagement.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="gridContentDiv single">
+        <h4>Design Process:</h4>
+        <p>
+            The development of this interface likely followed a user-centered design process:            
+            <ul>
+                <li>
+                    <strong>Research:</strong>
+                    Conducted user interviews or surveys to understand the needs of prospective graduate students (e.g., prioritizing program reputation, cost, or location).
+                </li>
+                <li>
+                    <strong>Wireframing:</strong>
+                    Created low-fidelity wireframes to map out key components (search bar, filters, results) and user flows.
+                </li>
+                <li>
+                    <strong>Prototyping:</strong>
+                    Built interactive prototypes in Figma to test navigation and filter interactions, iterating based on feedback.
+                </li>
+                <li>
+                    <strong>Visual Design:</strong>
+                    Developed a style guide (typography, colors, components) to ensure consistency and alignment with educational branding.
+                </li>
+                <li>
+                    <strong>Usability Testing:</strong>
+                    Conducted tests with target users to identify pain points, refining the design for clarity and efficiency.
+                </li>
+                <li>
+                    <strong>Iteration:</strong>
+                    Incorporated feedback to enhance accessibility, responsiveness, and functionality.
+                </li>
+            </ul>
+            <br>
+            <strong>Changes To Be Made</strong>
+            <img src="DS3.PNG" alt="Changes To Be Made">
+            <br>
+            <strong>Building Component Library</strong>
+            <img src="DS2.svg" alt="Building Component Library">
+            <br>
+            <strong>Responsive Design</strong>
+            <img src="DS1.svg" alt="Responsive Design">
+        </p>
+    </div>
+
+    <div class="gridContentDiv single">
+        <h4>Impact and Outcomes:</h4>
+        <p>
+            <ul>
+                <li>
+                    <strong>User Impact:</strong>
+                    The interface simplifies the graduate program search process, enabling users to make informed decisions efficiently.
+                </li>
+                <li>
+                    <strong>Business Impact:</strong>
+                    For stakeholders (e.g., universities or platforms hosting the tool), the design likely increases user engagement and conversion rates (e.g., program applications).
+                </li>
+                <li>
+                    <strong>Metrics of Success:</strong>
+                    Potential KPIs include time to find a program, filter usage rates, and user satisfaction scores from testing.
+                </li>
+            </ul>
+        </p>
+    </div>
+    
+    <div class="gridContentDiv single" style="background-color: #F7F7F7;">
+        <h4>Reflections:</h4>
+        <p>
+            This project showcases a balance of functionality and aesthetics, addressing the complex needs of academic users while maintaining simplicity. Key lessons include the importance of iterative testing to refine filters and the value of responsive design for broad accessibility. Future iterations could explore advanced features like AI-driven program recommendations or integration with application portals to further enhance the user journey.
+        </p>
+    </div>
+
+    <div class="gridContentDiv single">
+        <h4>Final Result</h4>
+        <p>
+            Here is a link of the  <a href="https://www.arizona.edu/degree-search/">live website</a><br>
+            If you want to learn more about the project, let's set up a time and talk. 
+        </p>
+    </div>
+    <div class="gridContentDiv single" style="background-color: #363062; color: white;">
+        <h4 style="color: white;">Thank You!</h4>
+        <p>
+            Thank you for reviewing my work. If you have any questions or want to just connect - feel free to reach out to me via email.
+        </p>
+    </div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('#navbarNav');
+
+            // Debug hamburger menu toggle
+            if (navbarToggler && navbarCollapse) {
+                navbarToggler.addEventListener('click', () => {
+                    console.log('Hamburger menu clicked. Collapse state:', navbarCollapse.classList.contains('show') ? 'Will hide' : 'Will show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

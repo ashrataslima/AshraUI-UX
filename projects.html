@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Ashra Taslima Projects</title>
+    <style>
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .content1 {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .project-card img {
+            width: 90%;
+            object-fit: cover;
+            margin: 20px;
+        }
+        .project-card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .project-card p {
+            margin: 0 10px 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .project-card a {
+            padding: 10px 20px;
+            background: #e0a0ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        .project-card a:hover {
+            background: #d090e0;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #1a1a1a;
+                flex-direction: column;
+                padding: 10px 0;
+                z-index: 1;
+            }
+            nav.active {
+                display: flex;
+            }
+            nav a {
+                margin: 10px 20px;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .project-card img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body style="overflow: scroll;">
+
+    <!-- <header> -->
+            <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="Logo.svg" alt="Ashra Taslima"width="80%" height="auto"></a>
+            <!-- Hamburger Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+                            <li><a class="dropdown-item" href="coursology.html">Coursology</a></li>
+                            <li><a class="dropdown-item" href="expressPay.html">Express Pay</a></li>
+                            <li><a class="dropdown-item" href="knowledgeHome.html">Knowledge Home</a></li>
+                            <li><a class="dropdown-item" href="degreeSearch.html">Degree Search</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="UI-UX Designer.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content1">
+        <h1>Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Group 1.svg" alt="Project 1">
+                <h3>Coursology</h3>
+                <p>A online learning platform for college students that allows for them to take virtual courses</p>
+                <a href="coursology.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Group 4.svg" alt="Project 2">
+                <h3>Express Pay</h3>
+                <p>A credit card payment system designed and build for the internal use of Credit One Bank</p>
+                <a href="expressPay.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Group 5.svg" alt="Project 3">
+                <h3>Knowledge Home</h3>
+                <p>An internal wikipedia of articles that are curated for different departments of Credit One Bank  </p>
+                <a href="knowledgeHome.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Group 6.svg" alt="Project 4">
+                <h3>Degree Search</h3>
+                <p>University application used for tracking and assessing the requirements for different degrees offered to students</p>
+                <a href="degreeSearch.html">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('#navbarNav');
+
+            // Debug hamburger menu toggle
+            if (navbarToggler && navbarCollapse) {
+                navbarToggler.addEventListener('click', () => {
+                    console.log('Hamburger menu clicked. Collapse state:', navbarCollapse.classList.contains('show') ? 'Will hide' : 'Will show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
